@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -10,16 +10,20 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        
         <div class="header">
+            
             <section class="main-nav">
                 <div class="logo">
                     <img src="assets/img/Logo.svg" alt="ADSPACE logo" />
                 </div>
-                <nav>
+                <nav class="navigation">
+                    <a href="#" id="menu-close">X</a>
                     <li><a href="#">SERVICES</a></li>
                     <li><a href="#">WORKS</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -30,14 +34,19 @@
                     <a href="#">
                         <span>GET STARTED</span>
                         <div>
-                            <img src="assets/img/Star 17.svg" alt="Star icon" />
-                        </div></a
-                    >
+                            <img
+                                src="assets/img/Star 17.svg"
+                                alt="Star icon"
+                            /></div
+                    ></a>
                 </div>
+                <button id="burger-menu">
+                    <i class="bi bi-list"></i>
+                </button>
             </section>
         </div>
-        <div class="hero-banner">
-            <div>
+        <div class="hero-container">
+            <div class="hero-banner">
                 <div>
                     <img
                         src="assets/img/heroBannerText.png"
@@ -45,14 +54,16 @@
                     />
                 </div>
             </div>
-        </div>
-        <div class="hero-bottom">
-            <div class="hero-content">
-                <p>
-                    ADSPACE is a full-service STRATEGY, DESIGN and DIGITAL
-                    MARKETING AGENCY that helps EMERGING and ESTABLICHED BRANDS
-                    GROW FASTER
-                </p>
+            <div class="hero-bottom">
+                <div class="hero-content">
+                    <p>
+                        ADSPACE is a full-service STRATEGY, DESIGN and DIGITAL
+                        MARKETING AGENCY that helps EMERGING and ESTABLICHED
+                        BRANDS GROW FASTER
+                    </p>
+                </div>
+            </div>
+            <div class="hero-info-wrapper">
                 <div class="hero-info">
                     <div class="info-block">
                         <p>40+</p>
@@ -230,25 +241,30 @@
                 </div>
             </div>
         </div>
-        <div class="get-started-form">
-            <div class="form-close-btn">
-                <img src="assets/img/Star 18.svg" alt="Close button" />
+        <div class="form-wrapper is-open">
+            <div class="get-started-form">
+                <div class="form-close-btn">
+                    <img src="assets/img/Star 18.svg" alt="Close button" />
+                </div>
+                <div class="form-title">
+                    <h3>Get<br />Started</h3>
+                    <p>Get your free marketing plan</p>
+                </div>
+                <form class="form-inputs">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" />
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" />
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" />
+                    <label for="budget">Budget</label>
+                    <input type="text" id="budget" />
+                    <button type="submit">
+                        SUBMIT
+                        <img src="assets/img/Down.svg" alt="down arrow" />
+                    </button>
+                </form>
             </div>
-            <div class="form-title">
-                <h3>Get<br>Started</h3>
-                <p>Get your free marketing plan</p>
-            </div>
-            <form class="form-inputs">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-                <label for="email">Email address</label>
-                <input type="email" id="email">
-                <label for="company">Company Name</label>
-                <input type="text" id="company">
-                <label for="budget">Budget</label>
-                <input type="text" id="budget">
-                <button type="submit">SUBMIT <img src="assets/img/Down.svg" alt="down arrow"></button>
-            </form>
         </div>
         <script src="js/script.js"></script>
     </body>

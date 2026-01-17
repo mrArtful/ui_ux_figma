@@ -693,3 +693,13 @@ a:hover {
     }
     
 }
+
+@media(max-width: 375px) {
+.get-started-form {
+        width: 230px;
+        right: 10px;
+        top: center;
+    }
+
+
+}

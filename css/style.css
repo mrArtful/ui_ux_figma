@@ -98,6 +98,11 @@ a:hover {
     height: 36px;
 }
 
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
 .navigation {
     display: flex;
     align-items: center;
@@ -125,6 +130,7 @@ a:hover {
 }
 
 #get-started a {
+    font-size: 16px;
     display: flex;
     padding: 12px 32px;
     align-items: center;
@@ -158,7 +164,7 @@ a:hover {
 .hero-banner div {
     display: flex;
     max-width: 1200px;
-    height: 740px;
+    max-width: 740px;
     padding-top: 120px;
     flex-direction: column;
     align-items: center;
@@ -167,8 +173,8 @@ a:hover {
 }
 
 .hero-banner img {
-    width: 426px;
-    height: 315px;
+    max-width: 100%;
+    max-height: 100%;
     aspect-ratio: 142/105;
 }
 
@@ -385,7 +391,7 @@ a:hover {
 
 .left-col {
     display: flex;
-    width: 360px;
+    max-width: 360px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
@@ -544,6 +550,13 @@ a:hover {
 }
 
 @media(max-width: 1200px) {
+
+    #get-started a {
+        padding: 10px 24px;
+        gap: 8px;
+        font-size: 14px;
+    }
+
     .form-wrapper {
         display: none;
     }
@@ -558,10 +571,16 @@ a:hover {
 
 @media(max-width: 990px) {
     .footer {
-        padding: 0 40px;
+        padding: 40px 40px;
     }
     #burger-menu {
         display: block;
+    }
+
+    #get-started a {
+        padding: 8px 12px;
+        gap: 8px;
+        font-size: 11px;
     }
 
     .hero-bottom,
@@ -612,8 +631,19 @@ a:hover {
 
 @media(max-width: 767px) {
 
+    
+
+    .logo {
+        width: 80px;
+        height: 21px;
+    }
+
+    #get-started a {
+        padding: 8px 12px;
+        /* gap: 8px; */
+    }
     .footer {
-        padding: 0 40px;
+        padding: 40px 40px;
     }
 
     .hero-bottom, .hero-info-wrapper {

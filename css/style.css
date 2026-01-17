@@ -683,6 +683,8 @@ a:hover {
     }
     .get-started-form {
         width: 260px;
+        right: 10px;
+        top: center;
     }
 
     .social-icons {

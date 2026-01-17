@@ -601,6 +601,7 @@ a:hover {
         flex-direction: column;
         align-items: flex-start;
         width: 360px;
+
         border-radius: 0 0 16px 16px;
     }
 
@@ -641,6 +642,10 @@ a:hover {
         padding: 8px 12px;
         /* gap: 8px; */
     }
+
+    .navigation {
+        width: 300px;
+    }
     .footer {
         padding: 40px 40px;
     }
@@ -669,6 +674,15 @@ a:hover {
     .footer-content-bottom p {
         order: 2;
         padding-top: 36px;
+    }
+
+    .form-wrapper {
+        width: 300px;
+        top: 0;
+        left:unset;
+    }
+    .get-started-form {
+        width: 260px;
     }
 
     .social-icons {

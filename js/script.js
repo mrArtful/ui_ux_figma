@@ -13,9 +13,9 @@ function closeMenu() {
     menu.classList.remove("visible");
 }
 
-function openForm() {
-    wrapper.classList.add("is-open");
-    wrapper.classList.remove("is-closed");
+function toggleForm() {
+    wrapper.classList.toggle("is-open");
+    wrapper.classList.toggle("is-closed");
 }
 
 function closeForm() {
@@ -38,7 +38,7 @@ window.addEventListener("resize", () => {
     }
 })
 
-getStartedBtn.addEventListener("click", openForm);
+getStartedBtn.addEventListener("click", toggleForm);
 formCloseBtn.addEventListener("click", closeForm);
 menuBtn.addEventListener('click', toggleMenu);
 menuCloseBtn.addEventListener('click', closeMenu);

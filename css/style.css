@@ -172,7 +172,6 @@ a:hover {
 .hero-banner div {
     display: flex;
     max-width: 1200px;
-    max-width: 740px;
     padding-top: 120px;
     flex-direction: column;
     align-items: center;
@@ -184,6 +183,28 @@ a:hover {
     width: 426px;
     height: 315px;
     aspect-ratio: 142/105;
+}
+
+#get-in-touch {
+    display: flex;
+    padding: 12px 32px;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-default);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    border-radius: 999px;
+    border: 1px solid var(--color-btn-primary-outline);
+    background-color: var(--color-btn-primary-bg);
+    box-shadow: 0 0 24px 0 rgba(192, 246, 60, 0.6);
+}
+
+#get-in-touch:hover {
+    box-shadow: 0 0 30px 0 rgba(192, 246, 60, 0.6);
 }
 
 .hero-bottom {
@@ -383,6 +404,10 @@ a:hover {
     align-self: stretch;
 }
 
+.footer a:hover {
+    color: var(--color-link-text-hover);
+}
+
 .footer-content-top {
     display: flex;
     justify-content: space-between;
@@ -574,6 +599,11 @@ a:hover {
         width: unset;
         max-width: 700px;
     }
+
+    .hero-content > p {
+        font-size: 24px;
+    }
+
     .hero-info-wrapper {
         width: unset;
     }
@@ -699,6 +729,10 @@ a:hover {
     .hero-bottom,
     .hero-info-wrapper {
         padding: 0 24px 100px 24px;
+    }
+
+    .hero-content > p {
+        font-size: 18px;
     }
 
     .main-content {

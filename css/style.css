@@ -15,7 +15,7 @@
     --color-text-inverse: #f8f8f7;
     --color-text-secondary-inverse: #c1c3bb;
     /* Inputs */
-    --color-input-bg: rgba(6, 6, 4, 0.10);
+    --color-input-bg: rgba(6, 6, 4, 0.1);
     /* Form */
     --color-form-bg: #b5e53b;
     /* Button general */
@@ -138,7 +138,15 @@ a:hover {
     border-radius: var(--button-corner-radius);
     border: 1px solid var(--color-btn-secondary-outline);
     background: var(--color-btn-secondary-bg);
-    color: var(--color-text-secondary)
+    color: var(--color-text-secondary);
+}
+#get-started div {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .hero-container {
@@ -151,7 +159,7 @@ a:hover {
 
 .hero-banner {
     display: flex;
-    height: 1000px;
+    height: 740px;
     padding: 0 60px;
     flex-direction: column;
     align-items: center;
@@ -173,13 +181,12 @@ a:hover {
 }
 
 .hero-banner img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 426px;
+    height: 315px;
     aspect-ratio: 142/105;
 }
 
 .hero-bottom {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,7 +210,6 @@ a:hover {
 }
 
 .hero-content > p {
-    
     color: #f8f8f7;
     /* align-self: stretch; */
     font-family: var(--font-default);
@@ -242,7 +248,6 @@ a:hover {
 }
 
 .info-block p:first-child {
-    
     font-variant-numeric: lining-nums proportional-nums;
     /* Title Empasized/Large */
     font-size: 32px;
@@ -253,7 +258,7 @@ a:hover {
 
 .info-block p:last-child {
     /* Label/Medium */
-    
+
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -331,7 +336,13 @@ a:hover {
     grid-row: span 1;
     grid-column: span 1;
     border-radius: 6px;
-    background: linear-gradient(0deg, var(--Backgrounds-Light-bg, #F8F8F7) 0%, var(--Backgrounds-Light-bg, #F8F8F7) 100%), var(--Backgrounds-Light-bg, #F8F8F7);
+    background:
+        linear-gradient(
+            0deg,
+            var(--Backgrounds-Light-bg, #f8f8f7) 0%,
+            var(--Backgrounds-Light-bg, #f8f8f7) 100%
+        ),
+        var(--Backgrounds-Light-bg, #f8f8f7);
 }
 
 .service-card h3 {
@@ -549,8 +560,7 @@ a:hover {
     background-color: var(--color-form-bg);
 }
 
-@media(max-width: 1200px) {
-
+@media (max-width: 1200px) {
     #get-started a {
         padding: 10px 24px;
         gap: 8px;
@@ -569,7 +579,7 @@ a:hover {
     }
 }
 
-@media(max-width: 990px) {
+@media (max-width: 990px) {
     .footer {
         padding: 40px 40px;
     }
@@ -581,6 +591,12 @@ a:hover {
         padding: 8px 12px;
         gap: 8px;
         font-size: 11px;
+    }
+
+    #get-started div {
+        gap: 10px;
+        width: 14px;
+        height: 14px;
     }
 
     .hero-bottom,
@@ -614,8 +630,20 @@ a:hover {
         align-self: flex-end;
         padding: 24px 40px;
         color: var(--color-bg-white);
-        
     }
+
+    .hero-banner div {
+        padding: 0 40px;
+        width: 300px;
+        height: 221.618px;
+        margin-top: 120px;
+    }
+
+    .hero-banner img {
+        width: 300px;
+        height: 221.618px;
+    }
+
     .main-services {
         width: unset;
         max-width: 900px;
@@ -629,28 +657,43 @@ a:hover {
     }
 }
 
-@media(max-width: 767px) {
-
-    
-
+@media (max-width: 767px) {
     .logo {
         width: 80px;
         height: 21px;
     }
 
-    #get-started a {
-        padding: 8px 12px;
-        /* gap: 8px; */
+    #get-started div {
+        display: none;
+    }
+
+    #get-startd img {
+        width: 50%;
+        height: 50%;
     }
 
     .navigation {
         width: 300px;
     }
+
+    .hero-banner div {
+        padding: 0 20px;
+        width: 240.001px;
+        height: 177.301px;
+        margin-top: 120px;
+    }
+
+    .hero-banner img {
+        width: 240px;
+        height: 177.301px;
+    }
+
     .footer {
         padding: 40px 40px;
     }
 
-    .hero-bottom, .hero-info-wrapper {
+    .hero-bottom,
+    .hero-info-wrapper {
         padding: 0 24px 100px 24px;
     }
 
@@ -679,7 +722,7 @@ a:hover {
     .form-wrapper {
         width: 300px;
         top: 0;
-        left:unset;
+        left: unset;
     }
     .get-started-form {
         width: 260px;
@@ -691,15 +734,16 @@ a:hover {
         order: 1;
         padding-top: 36px;
     }
-    
 }
 
-@media(max-width: 375px) {
-.get-started-form {
-        width: 230px;
+@media (max-width: 375px) {
+    .form-wrapper {
+        width: 305px;
+    }
+    .get-started-form {
+        padding: 8px 12px 36px;
         right: 10px;
         top: center;
+        gap: 32px;
     }
-
-
 }

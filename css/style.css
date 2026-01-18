@@ -676,6 +676,10 @@ a:hover {
         width: 300px;
     }
 
+    .hero-banner {
+        height: 540px;
+    }
+
     .hero-banner div {
         padding: 0 20px;
         width: 240.001px;

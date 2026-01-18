@@ -581,7 +581,7 @@ a:hover {
 
 @media (max-width: 990px) {
     .footer {
-        padding: 40px 40px;
+        padding: 40px 40px 0;
     }
     #burger-menu {
         display: block;
